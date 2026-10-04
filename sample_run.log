@@ -1,0 +1,143 @@
+[2026-10-04 17:34:30.330] [info] [thread 798] [main.cpp main:392] ================================================================
+[2026-10-04 17:34:30.331] [info] [thread 798] [main.cpp main:393] [main] 大恒工业相机取流程序启动
+[2026-10-04 17:34:30.331] [info] [thread 798] [main.cpp main:394] [main] 命令行: ./build/daheng_camera_demo --serial NE0190010001 --frames 100 --no-display --file-level debug
+[2026-10-04 17:34:30.331] [info] [thread 798] [main.cpp main:395] [main] 日志文件: logs/daheng_camera.log (console=debug file=debug level=debug)
+[2026-10-04 17:34:30.370] [info] [thread 798] [daheng_camera.cpp InitLib:128] [camera] GalaxySDK 初始化完成 (GXInitLib)
+[2026-10-04 17:34:31.395] [info] [thread 798] [daheng_camera.cpp Enumerate:167] [camera] 枚举到 1 台设备 (超时 1000 ms)
+[2026-10-04 17:34:31.395] [info] [thread 798] [daheng_camera.cpp Enumerate:213] [camera]   [1] U3V(USB3.0) | 厂商: Daheng Imaging | 型号: MER-230-168U3C | 序列号: NE0190010001
+[2026-10-04 17:34:31.395] [debug] [thread 798] [main.cpp main:435] [main] 设备 [1] U3V(USB3.0) MER-230-168U3C SN=NE0190010001 别名=
+[2026-10-04 17:34:31.395] [info] [thread 798] [main.cpp main:455] [main] 按序列号打开: NE0190010001
+[2026-10-04 17:34:32.211] [info] [thread 798] [daheng_camera.cpp OpenBySerial:256] [camera] 打开相机成功 SN=NE0190010001 (GX_ACCESS_EXCLUSIVE)
+[2026-10-04 17:34:32.212] [info] [thread 798] [daheng_camera.cpp LogStringNode:436] [camera]   DeviceVendorName = Daheng Imaging
+[2026-10-04 17:34:32.213] [info] [thread 798] [daheng_camera.cpp LogStringNode:436] [camera]   DeviceModelName = MER-230-168U3C
+[2026-10-04 17:34:32.214] [info] [thread 798] [daheng_camera.cpp LogStringNode:436] [camera]   DeviceSerialNumber = NE0190010001
+[2026-10-04 17:34:32.215] [info] [thread 798] [daheng_camera.cpp LogStringNode:436] [camera]   DeviceVersion = 12.12:28.10:25.11
+[2026-10-04 17:34:32.216] [info] [thread 798] [daheng_camera.cpp LogStringNode:436] [camera]   DeviceFirmwareVersion = 01.02.003.052:01.01.1811.9151
+[2026-10-04 17:34:32.220] [debug] [thread 798] [daheng_camera.cpp LogEnumNode:424] [camera] PixelFormat = BayerRG8 (17301513), 可选值: BayerRG8 | BayerRG10
+[2026-10-04 17:34:32.220] [info] [thread 798] [daheng_camera.cpp Configure:460] [camera] 开始配置相机: exposure=8000us gain=0dB gamma=-1 auto[exposure=off,gain=off,awb=on] pixel_format=BayerRG8 roi=fullxfull acq_mode=Continuous trigger=off throughput=max buffer_num=5 frame_timeout=1000ms
+[2026-10-04 17:34:32.224] [debug] [thread 798] [daheng_camera.cpp TrySetEnumByString:390] [camera] 节点 ExposureAuto := Off
+[2026-10-04 17:34:32.227] [debug] [thread 798] [daheng_camera.cpp TrySetEnumByString:390] [camera] 节点 GainAuto := Off
+[2026-10-04 17:34:32.230] [debug] [thread 798] [daheng_camera.cpp TrySetEnumByString:390] [camera] 节点 BalanceWhiteAuto := Continuous
+[2026-10-04 17:34:32.233] [debug] [thread 798] [daheng_camera.cpp TrySetEnumByString:390] [camera] 节点 AcquisitionMode := Continuous
+[2026-10-04 17:34:32.236] [debug] [thread 798] [daheng_camera.cpp TrySetEnumByString:390] [camera] 节点 TriggerMode := Off
+[2026-10-04 17:34:32.237] [debug] [thread 798] [daheng_camera.cpp TrySetEnumByString:390] [camera] 节点 PixelFormat := BayerRG8
+[2026-10-04 17:34:32.252] [info] [thread 798] [daheng_camera.cpp Configure:508] [camera] 分辨率 1920x1200
+[2026-10-04 17:34:32.274] [info] [thread 798] [daheng_camera.cpp SetFloatNode:352] [camera] ExposureTime -> 8000.000us (相机回读 8000.000us, 范围 [20, 1000000])
+[2026-10-04 17:34:32.293] [info] [thread 798] [daheng_camera.cpp SetFloatNode:352] [camera] Gain -> 0.000dB (相机回读 0.000dB, 范围 [0, 24])
+[2026-10-04 17:34:32.293] [debug] [thread 798] [daheng_camera.cpp Configure:516] [camera] Gamma 未指定，保持相机当前值
+[2026-10-04 17:34:32.300] [info] [thread 798] [daheng_camera.cpp Configure:523] [camera] DeviceLinkThroughputLimit 当前 400000000 B/s, 范围 [35000000, 400000000]
+[2026-10-04 17:34:32.301] [info] [thread 798] [daheng_camera.cpp SetIntNode:382] [camera] DeviceLinkThroughputLimit -> 400000000 (范围 [35000000, 400000000], 步进 1000000)
+[2026-10-04 17:34:32.305] [info] [thread 798] [daheng_camera.cpp Configure:552] [camera] 数据流 1 就绪, payload = 2304000 字节/帧
+[2026-10-04 17:34:32.305] [info] [thread 798] [daheng_camera.cpp Configure:563] [camera] 取流缓冲个数 = 5
+[2026-10-04 17:34:32.305] [info] [thread 798] [daheng_camera.cpp Configure:575] [camera] PixelColorFilter = RG -> DX_PIXEL_COLOR_FILTER(1)
+[2026-10-04 17:34:32.309] [info] [thread 798] [daheng_camera.cpp Configure:585] [camera] 转换缓冲区 6912000 字节 (Bayer/RAW -> BGR24)
+[2026-10-04 17:34:32.309] [info] [thread 798] [daheng_camera.cpp Configure:587] [camera] 相机配置完成
+[2026-10-04 17:34:32.345] [info] [thread 798] [daheng_camera.cpp Start:624] [camera] 取流已开始 (GXStreamOn) 曝光=8000.000us 增益=0.000dB
+[2026-10-04 17:34:32.345] [info] [thread 798] [main.cpp main:481] [main] 取流开始，按 q/ESC 退出（窗口有焦点时）
+[2026-10-04 17:34:32.354] [debug] [thread 798] [main.cpp main:511] [main] 帧 1 1920x1200 fps=0.0 frame_id=0
+[2026-10-04 17:34:32.360] [debug] [thread 798] [main.cpp main:511] [main] 帧 2 1920x1200 fps=0.0 frame_id=1
+[2026-10-04 17:34:32.366] [debug] [thread 798] [main.cpp main:511] [main] 帧 3 1920x1200 fps=0.0 frame_id=2
+[2026-10-04 17:34:32.372] [debug] [thread 798] [main.cpp main:511] [main] 帧 4 1920x1200 fps=0.0 frame_id=3
+[2026-10-04 17:34:32.381] [debug] [thread 798] [main.cpp main:511] [main] 帧 5 1920x1200 fps=0.0 frame_id=4
+[2026-10-04 17:34:32.390] [debug] [thread 798] [main.cpp main:511] [main] 帧 6 1920x1200 fps=0.0 frame_id=5
+[2026-10-04 17:34:32.399] [debug] [thread 798] [main.cpp main:511] [main] 帧 7 1920x1200 fps=0.0 frame_id=6
+[2026-10-04 17:34:32.406] [debug] [thread 798] [main.cpp main:511] [main] 帧 8 1920x1200 fps=0.0 frame_id=7
+[2026-10-04 17:34:32.415] [debug] [thread 798] [main.cpp main:511] [main] 帧 9 1920x1200 fps=0.0 frame_id=8
+[2026-10-04 17:34:32.422] [debug] [thread 798] [main.cpp main:511] [main] 帧 10 1920x1200 fps=0.0 frame_id=9
+[2026-10-04 17:34:32.429] [debug] [thread 798] [main.cpp main:511] [main] 帧 11 1920x1200 fps=0.0 frame_id=10
+[2026-10-04 17:34:32.439] [debug] [thread 798] [main.cpp main:511] [main] 帧 12 1920x1200 fps=0.0 frame_id=11
+[2026-10-04 17:34:32.446] [debug] [thread 798] [main.cpp main:511] [main] 帧 13 1920x1200 fps=0.0 frame_id=12
+[2026-10-04 17:34:32.453] [debug] [thread 798] [main.cpp main:511] [main] 帧 14 1920x1200 fps=0.0 frame_id=13
+[2026-10-04 17:34:32.463] [debug] [thread 798] [main.cpp main:511] [main] 帧 15 1920x1200 fps=0.0 frame_id=14
+[2026-10-04 17:34:32.469] [debug] [thread 798] [main.cpp main:511] [main] 帧 16 1920x1200 fps=0.0 frame_id=15
+[2026-10-04 17:34:32.480] [debug] [thread 798] [main.cpp main:511] [main] 帧 17 1920x1200 fps=0.0 frame_id=16
+[2026-10-04 17:34:32.485] [debug] [thread 798] [main.cpp main:511] [main] 帧 18 1920x1200 fps=0.0 frame_id=17
+[2026-10-04 17:34:32.493] [debug] [thread 798] [main.cpp main:511] [main] 帧 19 1920x1200 fps=0.0 frame_id=18
+[2026-10-04 17:34:32.501] [debug] [thread 798] [main.cpp main:511] [main] 帧 20 1920x1200 fps=0.0 frame_id=19
+[2026-10-04 17:34:32.510] [debug] [thread 798] [main.cpp main:511] [main] 帧 21 1920x1200 fps=0.0 frame_id=20
+[2026-10-04 17:34:32.520] [debug] [thread 798] [main.cpp main:511] [main] 帧 22 1920x1200 fps=0.0 frame_id=21
+[2026-10-04 17:34:32.528] [debug] [thread 798] [main.cpp main:511] [main] 帧 23 1920x1200 fps=0.0 frame_id=22
+[2026-10-04 17:34:32.536] [debug] [thread 798] [main.cpp main:511] [main] 帧 24 1920x1200 fps=0.0 frame_id=23
+[2026-10-04 17:34:32.542] [debug] [thread 798] [main.cpp main:511] [main] 帧 25 1920x1200 fps=0.0 frame_id=24
+[2026-10-04 17:34:32.550] [debug] [thread 798] [main.cpp main:511] [main] 帧 26 1920x1200 fps=0.0 frame_id=25
+[2026-10-04 17:34:32.561] [debug] [thread 798] [main.cpp main:511] [main] 帧 27 1920x1200 fps=0.0 frame_id=26
+[2026-10-04 17:34:32.567] [debug] [thread 798] [main.cpp main:511] [main] 帧 28 1920x1200 fps=0.0 frame_id=27
+[2026-10-04 17:34:32.574] [debug] [thread 798] [main.cpp main:511] [main] 帧 29 1920x1200 fps=0.0 frame_id=28
+[2026-10-04 17:34:32.583] [debug] [thread 798] [main.cpp main:511] [main] 帧 30 1920x1200 fps=0.0 frame_id=29
+[2026-10-04 17:34:32.589] [debug] [thread 798] [main.cpp main:511] [main] 帧 31 1920x1200 fps=0.0 frame_id=30
+[2026-10-04 17:34:32.600] [debug] [thread 798] [main.cpp main:511] [main] 帧 32 1920x1200 fps=0.0 frame_id=31
+[2026-10-04 17:34:32.607] [debug] [thread 798] [main.cpp main:511] [main] 帧 33 1920x1200 fps=0.0 frame_id=32
+[2026-10-04 17:34:32.615] [debug] [thread 798] [main.cpp main:511] [main] 帧 34 1920x1200 fps=0.0 frame_id=33
+[2026-10-04 17:34:32.623] [debug] [thread 798] [main.cpp main:511] [main] 帧 35 1920x1200 fps=0.0 frame_id=34
+[2026-10-04 17:34:32.631] [debug] [thread 798] [main.cpp main:511] [main] 帧 36 1920x1200 fps=0.0 frame_id=35
+[2026-10-04 17:34:32.641] [debug] [thread 798] [main.cpp main:511] [main] 帧 37 1920x1200 fps=0.0 frame_id=36
+[2026-10-04 17:34:32.649] [debug] [thread 798] [main.cpp main:511] [main] 帧 38 1920x1200 fps=0.0 frame_id=37
+[2026-10-04 17:34:32.655] [debug] [thread 798] [main.cpp main:511] [main] 帧 39 1920x1200 fps=0.0 frame_id=38
+[2026-10-04 17:34:32.663] [debug] [thread 798] [main.cpp main:511] [main] 帧 40 1920x1200 fps=0.0 frame_id=39
+[2026-10-04 17:34:32.671] [debug] [thread 798] [main.cpp main:511] [main] 帧 41 1920x1200 fps=0.0 frame_id=40
+[2026-10-04 17:34:32.679] [debug] [thread 798] [main.cpp main:511] [main] 帧 42 1920x1200 fps=0.0 frame_id=41
+[2026-10-04 17:34:32.691] [debug] [thread 798] [main.cpp main:511] [main] 帧 43 1920x1200 fps=0.0 frame_id=42
+[2026-10-04 17:34:32.697] [debug] [thread 798] [main.cpp main:511] [main] 帧 44 1920x1200 fps=0.0 frame_id=43
+[2026-10-04 17:34:32.704] [debug] [thread 798] [main.cpp main:511] [main] 帧 45 1920x1200 fps=0.0 frame_id=44
+[2026-10-04 17:34:32.712] [debug] [thread 798] [main.cpp main:511] [main] 帧 46 1920x1200 fps=0.0 frame_id=45
+[2026-10-04 17:34:32.719] [debug] [thread 798] [main.cpp main:511] [main] 帧 47 1920x1200 fps=0.0 frame_id=46
+[2026-10-04 17:34:32.735] [debug] [thread 798] [main.cpp main:511] [main] 帧 48 1920x1200 fps=0.0 frame_id=47
+[2026-10-04 17:34:32.740] [debug] [thread 798] [main.cpp main:511] [main] 帧 49 1920x1200 fps=0.0 frame_id=48
+[2026-10-04 17:34:32.749] [debug] [thread 798] [main.cpp main:511] [main] 帧 50 1920x1200 fps=0.0 frame_id=49
+[2026-10-04 17:34:32.758] [debug] [thread 798] [main.cpp main:511] [main] 帧 51 1920x1200 fps=0.0 frame_id=50
+[2026-10-04 17:34:32.763] [debug] [thread 798] [main.cpp main:511] [main] 帧 52 1920x1200 fps=0.0 frame_id=51
+[2026-10-04 17:34:32.773] [debug] [thread 798] [main.cpp main:511] [main] 帧 53 1920x1200 fps=0.0 frame_id=52
+[2026-10-04 17:34:32.778] [debug] [thread 798] [main.cpp main:511] [main] 帧 54 1920x1200 fps=0.0 frame_id=53
+[2026-10-04 17:34:32.785] [debug] [thread 798] [main.cpp main:511] [main] 帧 55 1920x1200 fps=0.0 frame_id=54
+[2026-10-04 17:34:32.793] [debug] [thread 798] [main.cpp main:511] [main] 帧 56 1920x1200 fps=0.0 frame_id=55
+[2026-10-04 17:34:32.801] [debug] [thread 798] [main.cpp main:511] [main] 帧 57 1920x1200 fps=0.0 frame_id=56
+[2026-10-04 17:34:32.813] [debug] [thread 798] [main.cpp main:511] [main] 帧 58 1920x1200 fps=0.0 frame_id=57
+[2026-10-04 17:34:32.819] [debug] [thread 798] [main.cpp main:511] [main] 帧 59 1920x1200 fps=0.0 frame_id=58
+[2026-10-04 17:34:32.826] [debug] [thread 798] [main.cpp main:511] [main] 帧 60 1920x1200 fps=0.0 frame_id=59
+[2026-10-04 17:34:32.835] [debug] [thread 798] [main.cpp main:511] [main] 帧 61 1920x1200 fps=0.0 frame_id=60
+[2026-10-04 17:34:32.841] [debug] [thread 798] [main.cpp main:511] [main] 帧 62 1920x1200 fps=0.0 frame_id=61
+[2026-10-04 17:34:32.850] [debug] [thread 798] [main.cpp main:511] [main] 帧 63 1920x1200 fps=0.0 frame_id=62
+[2026-10-04 17:34:32.863] [debug] [thread 798] [main.cpp main:511] [main] 帧 64 1920x1200 fps=0.0 frame_id=63
+[2026-10-04 17:34:32.868] [debug] [thread 798] [main.cpp main:511] [main] 帧 65 1920x1200 fps=0.0 frame_id=64
+[2026-10-04 17:34:32.875] [debug] [thread 798] [main.cpp main:511] [main] 帧 66 1920x1200 fps=0.0 frame_id=65
+[2026-10-04 17:34:32.884] [debug] [thread 798] [main.cpp main:511] [main] 帧 67 1920x1200 fps=0.0 frame_id=66
+[2026-10-04 17:34:32.893] [debug] [thread 798] [main.cpp main:511] [main] 帧 68 1920x1200 fps=0.0 frame_id=67
+[2026-10-04 17:34:32.901] [debug] [thread 798] [main.cpp main:511] [main] 帧 69 1920x1200 fps=0.0 frame_id=68
+[2026-10-04 17:34:32.909] [debug] [thread 798] [main.cpp main:511] [main] 帧 70 1920x1200 fps=0.0 frame_id=69
+[2026-10-04 17:34:32.915] [debug] [thread 798] [main.cpp main:511] [main] 帧 71 1920x1200 fps=0.0 frame_id=70
+[2026-10-04 17:34:32.922] [debug] [thread 798] [main.cpp main:511] [main] 帧 72 1920x1200 fps=0.0 frame_id=71
+[2026-10-04 17:34:32.930] [debug] [thread 798] [main.cpp main:511] [main] 帧 73 1920x1200 fps=0.0 frame_id=72
+[2026-10-04 17:34:32.940] [debug] [thread 798] [main.cpp main:511] [main] 帧 74 1920x1200 fps=0.0 frame_id=73
+[2026-10-04 17:34:32.952] [debug] [thread 798] [main.cpp main:511] [main] 帧 75 1920x1200 fps=0.0 frame_id=74
+[2026-10-04 17:34:32.957] [debug] [thread 798] [main.cpp main:511] [main] 帧 76 1920x1200 fps=0.0 frame_id=75
+[2026-10-04 17:34:32.964] [debug] [thread 798] [main.cpp main:511] [main] 帧 77 1920x1200 fps=0.0 frame_id=76
+[2026-10-04 17:34:32.969] [debug] [thread 798] [main.cpp main:511] [main] 帧 78 1920x1200 fps=0.0 frame_id=77
+[2026-10-04 17:34:32.980] [debug] [thread 798] [main.cpp main:511] [main] 帧 79 1920x1200 fps=0.0 frame_id=78
+[2026-10-04 17:34:32.989] [debug] [thread 798] [main.cpp main:511] [main] 帧 80 1920x1200 fps=0.0 frame_id=79
+[2026-10-04 17:34:32.995] [debug] [thread 798] [main.cpp main:511] [main] 帧 81 1920x1200 fps=0.0 frame_id=80
+[2026-10-04 17:34:33.002] [debug] [thread 798] [main.cpp main:511] [main] 帧 82 1920x1200 fps=0.0 frame_id=81
+[2026-10-04 17:34:33.011] [debug] [thread 798] [main.cpp main:511] [main] 帧 83 1920x1200 fps=0.0 frame_id=82
+[2026-10-04 17:34:33.020] [debug] [thread 798] [main.cpp main:511] [main] 帧 84 1920x1200 fps=0.0 frame_id=83
+[2026-10-04 17:34:33.029] [debug] [thread 798] [main.cpp main:511] [main] 帧 85 1920x1200 fps=0.0 frame_id=84
+[2026-10-04 17:34:33.035] [debug] [thread 798] [main.cpp main:511] [main] 帧 86 1920x1200 fps=0.0 frame_id=85
+[2026-10-04 17:34:33.042] [debug] [thread 798] [main.cpp main:511] [main] 帧 87 1920x1200 fps=0.0 frame_id=86
+[2026-10-04 17:34:33.050] [debug] [thread 798] [main.cpp main:511] [main] 帧 88 1920x1200 fps=0.0 frame_id=87
+[2026-10-04 17:34:33.061] [debug] [thread 798] [main.cpp main:511] [main] 帧 89 1920x1200 fps=0.0 frame_id=88
+[2026-10-04 17:34:33.072] [debug] [thread 798] [main.cpp main:511] [main] 帧 90 1920x1200 fps=0.0 frame_id=89
+[2026-10-04 17:34:33.079] [debug] [thread 798] [main.cpp main:511] [main] 帧 91 1920x1200 fps=0.0 frame_id=90
+[2026-10-04 17:34:33.085] [debug] [thread 798] [main.cpp main:511] [main] 帧 92 1920x1200 fps=0.0 frame_id=91
+[2026-10-04 17:34:33.091] [debug] [thread 798] [main.cpp main:511] [main] 帧 93 1920x1200 fps=0.0 frame_id=92
+[2026-10-04 17:34:33.102] [debug] [thread 798] [main.cpp main:511] [main] 帧 94 1920x1200 fps=0.0 frame_id=93
+[2026-10-04 17:34:33.110] [debug] [thread 798] [main.cpp main:511] [main] 帧 95 1920x1200 fps=0.0 frame_id=94
+[2026-10-04 17:34:33.117] [debug] [thread 798] [main.cpp main:511] [main] 帧 96 1920x1200 fps=0.0 frame_id=95
+[2026-10-04 17:34:33.123] [debug] [thread 798] [main.cpp main:511] [main] 帧 97 1920x1200 fps=0.0 frame_id=96
+[2026-10-04 17:34:33.131] [debug] [thread 798] [main.cpp main:511] [main] 帧 98 1920x1200 fps=0.0 frame_id=97
+[2026-10-04 17:34:33.140] [debug] [thread 798] [main.cpp main:511] [main] 帧 99 1920x1200 fps=0.0 frame_id=98
+[2026-10-04 17:34:33.151] [debug] [thread 798] [main.cpp main:511] [main] 帧 100 1920x1200 fps=0.0 frame_id=99
+[2026-10-04 17:34:33.151] [info] [thread 798] [main.cpp main:542] [main] 已达到 --frames 100 帧上限，正常退出
+[2026-10-04 17:34:33.330] [info] [thread 798] [daheng_camera.cpp Stop:639] [camera] 取流已停止 (GXStreamOff)
+[2026-10-04 17:34:33.331] [info] [thread 798] [main.cpp main:561] [main] 运行结束: 共 100 帧, 平均 124.10 fps, 时长 0.81 s（无窗口模式）
+[2026-10-04 17:34:33.331] [info] [thread 798] [main.cpp main:563] [main] SDK 侧统计: 收帧 100 / 坏帧 0 / 超时 0
+[2026-10-04 17:34:33.337] [info] [thread 798] [daheng_camera.cpp Close:298] [camera] 相机已关闭，累计收帧 100 帧 / 丢帧 0 / 超时 0
+[2026-10-04 17:34:33.340] [info] [thread 798] [daheng_camera.cpp CloseLib:138] [camera] GalaxySDK 已释放 (GXCloseLib)
+[2026-10-04 17:34:33.340] [info] [thread 798] [main.cpp main:570] [main] 程序退出，退出码 0
